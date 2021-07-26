@@ -47,21 +47,11 @@ export default {
       this.$store.dispatch('add_todo', todo.value)
       todo.value = ''
     },
-    comp(a) {
-      this.$store.dispatch('update_todo', a)
-    },
-    deletes(n) {
-      this.$store.commit('del',n)
-    },
-    fill(n) {
-      this.$store.commit('output',n)
-    },
     filter(n) {
       return this.$store.commit('donets',n)
       
     }
   }
-
 }
 </script>
 

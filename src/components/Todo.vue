@@ -25,7 +25,7 @@ export default {
       this.$store.dispatch('update_todo', a)
     },
     deletes(n) {
-      this.$store.commit('del',n)
+      this.$store.dispatch('delete_todo',n)
     }
   }
 }
